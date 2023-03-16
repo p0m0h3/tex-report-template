@@ -1,0 +1,26 @@
+\begin{titlingpage}
+\center
+\includegraphics[width=0.3\textwidth]{./sharif.png}\\[1cm]
+
+\ifdefined\school
+{\Large \school}
+\fi
+\vspace{4cm}
+
+\ifdefined\course
+{\Large \course}
+\fi
+\vspace{1cm}
+
+
+{\Huge \textbf{ \thetitle \space \ifdefined\hwnumber \tartibinumeral{\hwnumber} \fi}}
+\vspace{1cm}
+
+\Large \textbf{\theauthor \ifdefined\studentnumber \space \studentnumber \fi}
+\vspace{8cm}
+
+\ifdefined\thedate
+\thedate
+\fi
+
+\end{titlingpage}
