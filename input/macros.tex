@@ -1,0 +1,13 @@
+\newcounter{solutioncounter}
+
+\newenvironment{solution}%
+{% begin code
+  \par\vspace{\baselineskip}\noindent 
+  \refstepcounter{solutioncounter}% 
+  {\Large\textbf{پاسخ سوال \tartibinumeral{\thesolutioncounter}}}%
+  \vspace{\baselineskip} %
+  \hrule %
+  \vspace{\baselineskip} %
+}% 
+{% end code
+}
