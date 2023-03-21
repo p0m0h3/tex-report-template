@@ -4,7 +4,11 @@
 به نام خدا
 \vspace{5mm}
 
-\includegraphics[width=0.3\textwidth]{./sharif.png}\\[1cm]
+\ifdefined\logo
+\includegraphics[width=0.3\textwidth]{\logo}\\[1cm]
+\else
+\vspace{6cm}
+\fi
 
 \ifdefined\school
 {\Large \school}

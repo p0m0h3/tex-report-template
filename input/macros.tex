@@ -2,12 +2,24 @@
 
 \newenvironment{solution}%
 {% begin code
-  \par\vspace{\baselineskip}\noindent 
+  \vspace{\baselineskip}%
+  \noindent
   \refstepcounter{solutioncounter}% 
-  {\Large\textbf{پاسخ سوال \tartibinumeral{\thesolutioncounter}}}%
-  \vspace{\baselineskip} %
-  \hrule %
-  \vspace{\baselineskip} %
+  {\textbf{پاسخ سوال \tartibinumeral{\thesolutioncounter}}:}%
 }% 
 {% end code
+  \vspace{\baselineskip} %
+}
+
+\newcounter{questioncounter}
+
+\newenvironment{question}%
+{% begin code
+  \vspace{\baselineskip}%
+  \noindent
+  \refstepcounter{questioncounter}% 
+  {\textbf{سوال \tartibinumeral{\thequestioncounter}}.}%
+}% 
+{% end code
+  \vspace{\baselineskip}%
 }
