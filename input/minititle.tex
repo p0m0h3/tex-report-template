@@ -1,0 +1,34 @@
+\begin{center}
+{\small «به نام خدا»}
+\end{center}
+
+
+\begin{minipage}{12cm}
+{\textbf{ \large \thetitle \space \ifdefined\hwnumber \tartibinumeral{\hwnumber} \fi}}
+\vspace{0.2cm}
+
+\ifdefined\course
+{\course}
+\fi
+
+{\theauthor \ifdefined\studentnumber \space - \studentnumber \fi}
+
+\ifdefined\thedate
+\thedate
+\fi
+
+\end{minipage}
+\hfill
+\begin{minipage}{3cm}
+\begin{center}
+\ifdefined\logo
+\includegraphics[width=0.6\textwidth]{\logo}
+\fi
+
+\ifdefined\school
+{\school}
+\fi
+\end{center}
+\end{minipage}
+\vspace{0.2cm}
+\hrule
